@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+<article>
+{% include "partials/page-header.html" %}
+</article>
+<article>
+{% for item in collections.aboutme %}
+    <h2>{{ item.data.title }}</h2>
+    <p>{{ item.templateContent | safe }}</p>
+    {% if item.data.image %}
+        <img src="{{ item.data.image }}" alt="No alt text :(">
+    {% endif %}
+{% endfor %}
+</article>
+
+{% include "partials/Abtme-school-trips.html" %}
+
+{% include "partials/cta.html" %}
+
+{% endblock %}

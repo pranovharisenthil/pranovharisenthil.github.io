@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/site-head.css">
+<a class="[ skip-link ] [ button ]" href="#main-content">Skip to content</a>
+<header role="banner" class="site-head">
+  <div class="site-head__none">
+    <div class="site-head__content">
+      <a href="/" class="site-head__signature">
+        <img src="/images/signature/signature_white.png" alt="Pranov's Signature" class="site-head__signimage">
+      </a>
+
+      <nav class="nav" id="navMenu" aria-label="Primary">
+        <ul class="nav__list">
+          {% for item in navigation.items %}
+          <li class="nav__item">
+            <a href="{{ item.url }}" class="nav__link" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
+              {{ item.text }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="overlay" class="overlay"></div>

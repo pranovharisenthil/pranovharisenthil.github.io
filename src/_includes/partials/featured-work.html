@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/featured-work.css">
+<article class="featured-work">
+	<div class="wrapper">
+		<div class="featured-work__inner">
+			<div class="featured-work__intro">
+				<h2
+					class="featured-work__heading"
+				>
+					{{ featuredWork.title }}
+				</h2>
+				<p class="featured-work__summary">
+					{{ featuredWork.summary }}
+				</p>
+			</div>
+			{% for item in collections.featuredWork %}
+				<div class="featured-item {{ 'item' ~ loop.index }}">
+					<li>
+						<div class="featured-item__text-wrapper {{ 'item' ~ loop.index }}">
+							<h3 class="featured-item__title {{ 'item' ~ loop.index }}">
+								{{ item.data.title }}
+							</h3>
+							<p class="featured-item__text {{ 'item' ~ loop.index }}">
+								{{ item.data.summary }}
+							</p>
+						</div>	
+						<div class="featured-item__image {{ 'item' ~ loop.index }}">
+						<img src="{{ item.data.imagefeatured }}">
+						</div>
+							
+					</li>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="featured-work__action">
+			<a href="/work/" class="featured-work__button">See all my work</a>
+		</div>
+	</div>
+</article> 
+</link>

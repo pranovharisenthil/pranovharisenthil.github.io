@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<link rel="stylesheet" href="/css/home.css">
+
+<article>
+    <div class="NameTypeWriter">
+        <div id="typedtext"></div>
+    </div>
+</article>
+
+{% include "partials/featured-work.html" %}
+{% include "partials/cta.html" %}
+<script src="/js/typewriter.js" defer></script>
+{% endblock %}
