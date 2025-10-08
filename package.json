@@ -4,7 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npx eleventy --serve"
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "ELEVENTY_ENV=development eleventy",
+    "start": "npm run watch:eleventy",
+    "build": "npm run build:eleventy"
   },
   "keywords": [],
   "author": "",
