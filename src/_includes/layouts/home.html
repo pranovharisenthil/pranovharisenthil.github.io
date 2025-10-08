@@ -3,10 +3,17 @@
 <link rel="stylesheet" href="/css/home.css">
 
 <article>
-    <div class="NameTypeWriter">
-        <div id="typedtext"></div>
+    <div class="typewriter-container">
+        <div class="typewriter-text">
+            <div id="typedtext"></div>
+        </div>
+        <div class="Intro-Main__Image">
+            <img id="main-image" src="{{intro.mainImage}}">
+        </div>
     </div>
 </article>
+
+
 
 {% include "partials/featured-work.html" %}
 {% include "partials/cta.html" %}

@@ -2,8 +2,11 @@
 title: 'Pranov''s Website'
 layout: 'layouts/home.html'
 intro:
-  main: 'I''m Pranov, a professional ameture tinkerer'
-  support: 'A student from SIS Ruwais'
+  main: 'This is me in the flesh and bone'
+  mainImage: '/images/me-in-flesh-temp.jpeg'
+  aocta: 'If you are an Admissions Officers, do check out'
+  aoctaButtonText: 'this page'
+  aoctaButtonUrl: '/admissions'
   summary: 'And I love doing stuff that makes me feel excruciating pain'
   buttonText: 'Check out some of it'
   buttonUrl: '/work'
