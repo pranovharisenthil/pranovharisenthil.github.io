@@ -1,0 +1,25 @@
+.post-list {
+    padding: 2vh 0 2vh 0;
+    background-color: #d3affc;
+}
+
+.post-list__item {
+    list-style: none;
+    margin: 0 30% 1.5rem 30%;
+}
+
+.post-list__link {
+    color: #000000;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: 0.2ch;
+    text-decoration: underline;
+}
+
+.post-list__link:hover {
+    color: #48537e;
+}
+
+.post-list__spacer {
+    height: 12vh;
+}

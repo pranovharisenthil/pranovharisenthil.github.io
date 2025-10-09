@@ -46,6 +46,30 @@ function typewriter() {
     }
 }
 
+var destination = document.getElementById("typedtext");
+
+// --- measure longest line and set the typed box width in px ---
+(function setTypedWidth() {
+  var longest = aText.reduce(function(a, b) { return a.length > b.length ? a : b; }, "");
+  // create hidden measurer
+  var meas = document.createElement('span');
+  meas.style.position = 'absolute';
+  meas.style.visibility = 'hidden';
+  meas.style.whiteSpace = 'pre';
+  // copy font styles so measurement matches actual rendering
+  var cs = window.getComputedStyle(destination);
+  meas.style.fontFamily = cs.fontFamily;
+  meas.style.fontSize = cs.fontSize;
+  meas.style.fontWeight = cs.fontWeight;
+  meas.style.letterSpacing = cs.letterSpacing;
+  meas.textContent = longest;
+  document.body.appendChild(meas);
+  var width = Math.ceil(meas.getBoundingClientRect().width);
+  document.body.removeChild(meas);
+  destination.style.width = width + 'px';
+})();
+
+
 typewriter();
 
 
