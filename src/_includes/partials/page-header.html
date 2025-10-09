@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="/css/page-header.css">
-<div class="[ page-header ]">
-	<div class="[ wrapper ]">
-		<h1 class="[ page-header__heading ]">
+<div class="page-header">
+		<h1 class="page-header__heading">
 			{{ pageHeaderTitle }}
 		</h1>
 		{% if pageHeaderSummary %}
-		<div class="[ page-header__summary ]">
-			{{ pageHeaderSummary | safe }}
+		<div class="page-header__summary">
+			<p>
+				{{ pageHeaderSummary | safe }} 
+			</p>
 		</div>
 		{% endif %}
-	</div>
 </div>

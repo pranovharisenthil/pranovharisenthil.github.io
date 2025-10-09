@@ -1,0 +1,229 @@
+/*Electric Car*/
+
+.about-me.item1 {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.about-me.item1 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-me__text-wrapper.item1 {
+    flex: 0 0 40%; 
+    padding: 2vh 2vh 2vh 10%;
+    box-sizing: border-box; 
+}
+
+.about-me__image.item1 {
+    flex: 0 0 60%;
+    padding: 2vh 10% 2vh 2vh;
+    display: flex;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+.about-me__image.item1 img {
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+    display: block;
+}
+
+.about-me__title.item1,
+.about-me__text.item1 {
+    color: white;
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-me__title.item1 {
+    font-size: 1.5rem;
+}
+
+.about-me__text.item1 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}
+
+/* Gaming */
+
+.about-me.item2 {
+    background-color: rgb(223, 65, 65);
+    margin: 0;
+    padding: 0;
+}
+
+.about-me.item2 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row-reverse; 
+}
+
+.about-me__text-wrapper.item2 {
+    flex: 0 0 40%; 
+    padding: 2vh 10% 2vh 2%;
+    box-sizing: border-box; 
+}
+
+.about-me__image.item2 {
+    flex: 0 0 60%;
+    padding: 2vh 2vh 2vh 10%;
+    display: flex;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+.about-me__image.item2 img {
+    border-radius: 25px;
+    height: 70vh;
+    width: auto;
+    display: block;
+}
+
+.about-me__title.item2,
+.about-me__text.item2 {
+    color: white;
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-me__title.item2 {
+    font-size: 1.5rem;
+}
+
+.about-me__text.item2 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}
+
+/* Badminton */
+
+.about-me.item3 {
+    background-color: rgb(71, 209, 61);
+    margin: 0;
+    padding: 0;
+}
+
+.about-me.item3 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-me__text-wrapper.item3 {
+    flex: 0 0 40%; 
+    padding: 2vh 2vh 2vh 10%;
+    box-sizing: border-box; 
+}
+
+.about-me__image.item3 {
+    flex: 0 0 60%;
+    padding: 2vh 10% 2vh 2vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.about-me__image.item3 img {
+    border-radius: 25px;
+    height: 70vh;
+    width: auto;
+    display: block;
+}
+
+.about-me__title.item3,
+.about-me__text.item3 {
+    color: rgb(0, 0, 0);
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-me__title.item3 {
+    font-size: 1.5rem;
+}
+
+.about-me__text.item3 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}
+
+/* Kollywood */
+
+.about-me.item4 {
+    background-color: rgb(45, 45, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.about-me.item4 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row-reverse; 
+}
+
+.about-me__text-wrapper.item4 {
+    flex: 0 0 40%; 
+    padding: 2vh 10% 2vh 2%;
+    box-sizing: border-box; 
+}
+
+.about-me__image.item4 {
+    flex: 0 0 60%;
+    padding: 2vh 2vh 2vh 10%;
+    display: flex;
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+.about-me__image.item4 img {
+    border-radius: 25px;
+    height: 70vh;
+    width: auto;
+    display: block;
+}
+
+.about-me__title.item4,
+.about-me__text.item4 {
+    color: rgb(255, 255, 255);
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.about-me__title.item4 {
+    font-size: 1.5rem;
+}
+
+.about-me__text.item4 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}

@@ -9,5 +9,4 @@ paginationPrevText: 'Newer posts'
 paginationNextText: 'Older posts'
 paginationAnchor: '#blog-list'
 ---
-
-A list of random stuff i have talked about for anyone to read.
+A place for me to share my thoughts on topics I’m passionate about, open for anyone to read.

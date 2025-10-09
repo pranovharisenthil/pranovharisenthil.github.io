@@ -13,9 +13,17 @@
     </div>
 </article>
 
-
+<article class="aocta">
+    <p class="aocta__text"> 
+        {{intro.aocta}} 
+        <br> 
+        <a class="aocta__button" href="{{intro.aoctaButtonUrl}}">
+            {{intro.aoctaButtonText}}
+        </a> 
+    </p>
+    
+</article>
 
 {% include "partials/featured-work.html" %}
-{% include "partials/cta.html" %}
 <script src="/js/typewriter.js" defer></script>
 {% endblock %}

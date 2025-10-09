@@ -6,7 +6,7 @@
 {% set pageHeaderSummary %}
   <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
   {% if tags %}
-    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under.</p>
+    <p class="visually-hidden" id="tags-desc">Tags that this post has been filed under: </p>
     <ul class="tags-list" aria-describedby="tags-desc">
       {% for tag in tags %}
         <li>
@@ -18,13 +18,16 @@
 {% endset %}
 
 {% block content %}
+<link rel="stylesheet" href="/css/post.css">
   <article>
     {% include "partials/page-header.html" %}
     
-    <div class="[ page-content ]">
-      {{ content | safe }}
+    <div class="page-content">
+      <p>{{ content | safe }} </p>
+    </div>
+    <div class="Blog-home__wrapper">
+      <a class="Blog-home__button" href="/blog">Back to Blog List</a>
     </div>
   </article>
-  <a href="/blog">Check out the other Blogs</a>
-  {% include "partials/cta.html" %}
+
 {% endblock %}

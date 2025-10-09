@@ -4,21 +4,25 @@
 {% set pageHeaderSummary = content %}
 
 {% block content %}
+<link rel="stylesheet" href="/css/about-me.css" />
 <article>
 {% include "partials/page-header.html" %}
 </article>
 <article>
 {% for item in collections.aboutme %}
-    <h2>{{ item.data.title }}</h2>
-    <p>{{ item.templateContent | safe }}</p>
-    {% if item.data.image %}
-        <img src="{{ item.data.image }}" alt="No alt text :(">
-    {% endif %}
+    <div class="about-me {{ 'item' ~ loop.index }}">
+        <li>
+            <div class="about-me__text-wrapper {{ 'item' ~ loop.index }}">
+                <h2 class="about-me__title {{ 'item' ~ loop.index }}">{{ item.data.title }}</h2>
+                <p class="about-me__text {{ 'item' ~ loop.index }}">{{ item.data.summary }}</p>
+            </div>
+            <div class="about-me__image {{ 'item' ~ loop.index }}">
+                <img src="{{ item.data.image }}" alt="No alt text :(">
+            </div>
+        </li>
+    </div>
 {% endfor %}
 </article>
 
-{% include "partials/Abtme-school-trips.html" %}
-
-{% include "partials/cta.html" %}
 
 {% endblock %}
