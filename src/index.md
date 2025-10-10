@@ -6,7 +6,7 @@ intro:
   mainImage: '/images/me-in-flesh-temp.jpeg'
   aocta: 'P.S: If you are an Admissions Officers, do check out '
   aoctaButtonText: 'this page'
-  aoctaButtonUrl: 'pranovharisenthil.pages.dev'
+  aoctaButtonUrl: 'https://pranovharisenthil.pages.dev/'
   summary: 'And I love doing stuff that makes me feel excruciating pain'
   buttonText: 'Check out some of it'
   buttonUrl: '/work'
