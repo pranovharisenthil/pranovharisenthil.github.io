@@ -1,0 +1,162 @@
+/*Electric Car*/
+
+.gallery.item1 {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery.item1 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery__text-wrapper.item1 {
+    flex: 0 0 40%; 
+    padding: 2vh 2vh 2vh 10%;
+    box-sizing: border-box; 
+}
+
+.gallery__image.item1 {
+    flex: 0 0 60%;
+    padding: 2vh 10% 2vh 2vh;
+}
+
+.gallery__image.item1 img {
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+    display: block;
+}
+
+.gallery__title.item1,
+.gallery__text.item1 {
+    color: white;
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.gallery__title.item1 {
+    font-size: 1.5rem;
+}
+
+.gallery__text.item1 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}
+
+/* Sabis STEAM */
+
+.gallery.item2 {
+    background-color: rgb(0, 100, 70);
+    margin: 0;
+    padding: 0;
+}
+
+.gallery.item2 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row-reverse; 
+}
+
+.gallery__text-wrapper.item2 {
+    flex: 0 0 40%; 
+    padding: 2vh 10% 2vh 2%;
+    box-sizing: border-box; 
+}
+
+.gallery__image.item2 {
+    flex: 0 0 60%;
+    padding: 2vh 2vh 2vh 10%;
+}
+
+.gallery__image.item2 img {
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+    display: block;
+}
+
+.gallery__title.item2,
+.gallery__text.item2 {
+    color: white;
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.gallery__title.item2 {
+    font-size: 1.5rem;
+}
+
+.gallery__text.item2 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}
+
+/* Debate */
+
+.gallery.item3 {
+    background-color: rgb(0, 62, 185);
+    margin: 0;
+    padding: 0;
+}
+
+.gallery.item3 li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery__text-wrapper.item3 {
+    flex: 0 0 40%; 
+    padding: 2vh 2vh 2vh 10%;
+    box-sizing: border-box; 
+}
+
+.gallery__image.item3 {
+    flex: 0 0 60%;
+    padding: 2vh 10% 2vh 2vh;
+}
+
+.gallery__image.item3 img {
+    width: 100%;
+    border-radius: 25px;
+    height: auto;
+    display: block;
+}
+
+.gallery__title.item3,
+.gallery__text.item3 {
+    color: white;
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.gallery__title.item3 {
+    font-size: 1.5rem;
+}
+
+.gallery__text.item3 {
+    padding-top: 1vh;
+    font-size: 1.25rem;
+}
