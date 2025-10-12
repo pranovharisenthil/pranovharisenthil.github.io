@@ -4,29 +4,34 @@
 {% set pageHeaderSummary = content %} 
 
 {% block content %}
+<link rel="stylesheet" href="/css/work-landing.css">
 <article>
     {% include "partials/page-header.html" %}
 </article>
 
-<div class="wrapper">
-    <article class="gallery">
-    {% for item in collections.work %}
-    <li class="gallery__content">
-        <h2 class="gallery__heading">
-            {{ item.data.title }}
-        </h2>
-        <p class="gallery__summary">
-            {{ item.data.summary }}
-        </p>
-        <a href="{{ item.url }}" class="button">See this work</a>
-        <div class="gallery__media" data-frame="primary">
-        <img
-            class="radius"
-            src="{{ item.data.imagefeatured }}"
-        />
-        </div>
-    </li>
-    {% endfor %}
-    </article>
+<div class="wrapper ">
+    <div class="gallery__all {{ 'item' ~ loop.index }}">
+        {% for item in collections.work %}
+        <li class="gallery__content {{ 'item' ~ loop.index }}">
+            <div class="gallery {{ 'item' ~ loop.index }}">
+                <div class="gallery__text-wrapper {{ 'item' ~ loop.index }}">
+                    <h2 class="gallery__title {{ 'item' ~ loop.index }}">
+                        {{ item.data.title }}
+                    </h2>
+                    <p class="gallery__text {{ 'item' ~ loop.index }}">
+                        {{ item.data.summary }}
+                    </p>
+                </div>
+                <div class="gallery__image {{ 'item' ~ loop.index }}" data-frame="primary">
+                <img
+                    src="{{ item.data.imagefeatured }}"
+                    alt="Image not loading"
+                />
+                </div>
+            </div>
+            <a href="{{ item.url }}" class="gallery__button {{ 'item' ~ loop.index }}">See this work</a>
+        </li>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

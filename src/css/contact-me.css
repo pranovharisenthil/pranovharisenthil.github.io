@@ -1,0 +1,31 @@
+.Contact__wrapper {
+    background-color: white;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+}
+
+.Contact__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    padding-top: 2vh;
+    margin: 0;
+}
+
+.Contact__list p, .Contact__list a{
+    color: #ff7b00;
+    font-family: "Share Tech Mono", sans-serif;
+    display: block; 
+    margin: 0;
+    padding: 1vh;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.Contact__list a:hover {
+    text-decoration: underline;
+}

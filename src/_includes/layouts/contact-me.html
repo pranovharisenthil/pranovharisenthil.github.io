@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+<link rel="stylesheet" href="/css/contact-me.css"/>
+<article>
+{% include "partials/page-header.html" %}
+</article>
+
+<article class="Contact__wrapper">
+    <li class="Contact__list">
+        <p>{{email}}</p>
+        <p>{{phone}}</p>
+        <a href="{{linkedinUrl}}">{{linkedintext}}</a>
+        <a href="{{githubUrl}}">{{githubtext}}</a>
+    </li>
+</article>
+
+
+{% endblock %}
